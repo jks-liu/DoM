@@ -3,21 +3,21 @@
 
 使用介绍
 --------
-本程序主要用于机械设计中涉及到的各种计算。
+本程序主要用于机械设计中涉及到的各种计算。  
 
-本人用的是linux系统， 所以一个已经编译好的（linux下的）二进制可执行文件放在linux/目录下。
-本人只在ubuntu12.04LST对程序进行了验证。
-本人尽量以可移植的编码方式编写程序， 所以在其他系统下， 你也可以在linux/目录下尝试执行：
-        make
-有任何问题可以直接提出。
+本人用的是linux系统， 所以一个已经编译好的（linux下的）二进制可执行文件放在linux/目录下。  
+本人只在ubuntu12.04LST对程序进行了验证。  
+本人尽量以可移植的编码方式编写程序， 所以在其他系统下， 你也可以在linux/目录下尝试执行：  
+        make  
+有任何问题可以直接提出。  
 
-若想参与程序的编写可以申请。
-！本程序尚未完成。
+若想参与程序的编写可以申请。  
+***！本程序尚未完成。***  
 
 参考文献/标准：
 --------------
-濮良贵, 纪名刚.《机械设计》Design of Machinery 第八版 高等教育出版社 978-7-04-019256-8
-David Abrahams, Aleksey Gurtovoy. C++ Template Metaprogramming ISBN 0321227255, http://www.awprofessional.com/titles/0321227255. Copyright (c) 2005 by Pearson Education, Inc. Reprinted with permission. 
+[1]濮良贵, 纪名刚.《机械设计》 Design of Machinery 第八版 高等教育出版社 978-7-04-019256-8  
+[2]David Abrahams, Aleksey Gurtovoy. C++ Template Metaprogramming ISBN 0321227255, http://www.awprofessional.com/titles/0321227255. Copyright (c) 2005 by Pearson Education, Inc. Reprinted with permission. 
 
 写给开发者（目前只有我自己 ^_^）
 -------------------------------

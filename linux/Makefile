@@ -2,23 +2,29 @@
 #author:   jks
 #date:     14-Jun-201
 
-VPATH=./src/:./inc/:./tmp/
+.PHONY: all
+all: dom
 
-CC=g++
-CFLAGS = -I./inc/ -I/usr/local/boost_1_49_0/ 
+VPATH=../src
 
-OBJS=main.o 
+CXX=g++
+CXXFLAGS = -I../inc/ -I/usr/local/boost_1_49_0/ 
 
-all: $(OBJS)
-	$(CC) $(CFLAGS) $(^D)/$(^F) -o dom
+OBJS=./main.o 
 
-%.o: %.cpp
-	$(CC) $(CFLAGS) -c $< -o ./tmp/$@
+dom: $(OBJS)
+	$(CXX) $(CXXFLAGS) $^ -o dom
+
+$(OBJS): %.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o ./$@
 
 .PHONY: clean
-clean:
+clean: clean_objs
 	rm -f ./dom
-	rm -f ./tmp/?*
+
+.PHONY: clean_objs
+clean_objs:
+	rm -f ./*.o
 
 .PHONY: run
 run:
