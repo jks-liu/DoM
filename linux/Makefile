@@ -8,7 +8,7 @@ all: dom
 VPATH=../src
 
 CXX=g++
-CXXFLAGS = -I../inc/ -I/usr/local/boost_1_49_0/ 
+CXXFLAGS = -I../inc/ -I/usr/local/boost_1_49_0/
 
 OBJS=./main.o 
 
